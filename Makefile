@@ -7,5 +7,5 @@ main.o: main.cpp
 unindent.o: unindent.cpp unindent.h
 	g++ -c -g unindent.cpp
 
-clena:
+clean:
 	rm -f main.o unindent.o
