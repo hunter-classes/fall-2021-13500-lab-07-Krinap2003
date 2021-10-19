@@ -7,13 +7,23 @@ Assignment: Lab 6
 #include <iostream>
 #include <fstream>
 #include "unindent.h"
+#include  "indent.h"
 
 int main()
 {
-    std::string line;
-    while(getline(std::cin, line))
+    //Task A
+    std::ifstream badCode("badcode.cpp");
+    if(badCode.fail())
     {
-        std::cout<<removeLeadingSpaces(line);
+        std::cout<<"cannot open file";
+        exit(1);
     }
+    std::string line;
+     for (std::string line; std::getline(badCode, line);) {
+        std::cout << removeLeadingSpaces(line) << std::endl;
+    }
+    badCode.close();
+    
     return 0;
 }
+

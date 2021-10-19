@@ -10,13 +10,13 @@ std::string removeLeadingSpaces(std::string line)
     bool isStart = false;
     for(int i = 0; i < line.length(); i++)
     {
-        if(!isspace(line.at(i)))
+        if(!isspace(line[i]))
         {
             isStart = true;
         }
         if(isStart)
         {
-            result += line.substr(i) + "\n";
+            result += line.substr(i)+"\n";
             break;
         }
     }
