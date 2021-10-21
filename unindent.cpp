@@ -1,9 +1,10 @@
+//Task A
 #include <iostream>
 #include <fstream>
 #include <cctype>
 #include "unindent.h"
 
-
+//Removes all leading spaces
 std::string removeLeadingSpaces(std::string line)
 {
     std::string result = "";

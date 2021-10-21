@@ -1,9 +1,12 @@
+//Task B
 #include <iostream>
 #include <fstream>
 #include <cctype>
 #include "unindent.h"
 #include "indent.h"
 
+
+//indents the line based on the number of tabs
 std::string indent(std::string line, int tab)
 {
     std::string result = "";
@@ -14,6 +17,7 @@ std::string indent(std::string line, int tab)
     return result + line;
 }
 
+//counts the nmber of char
 int countChar(std::string line, char c)
 {
     int result = 0; 
