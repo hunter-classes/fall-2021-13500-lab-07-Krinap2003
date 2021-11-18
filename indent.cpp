@@ -17,7 +17,7 @@ std::string indent(std::string line, int tab)
     return result + line;
 }
 
-//counts the nmber of char
+//counts the nmber of char by iterating through line
 int countChar(std::string line, char c)
 {
     int result = 0; 
