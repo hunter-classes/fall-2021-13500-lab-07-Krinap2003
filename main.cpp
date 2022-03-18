@@ -52,7 +52,7 @@ int main()
     int open = 0;
     int close = 0;
     int tab = 0;
-    for (std::string line; std::getline(badCode, line);) 
+    for (std::string line; std::getline(badCode, line);)
     {
         //checks if there is a close bracket and if there is it
         //reduces the number of tabs by 1
@@ -64,7 +64,7 @@ int main()
         //removes leading spaces
         std::string s = removeLeadingSpaces(line);
         //call the indent function to indent the line
-        std::cout<<indent(s, tab); 
+        std::cout<<indent(s, tab);
         //indents and save the line in the fixed-indented file
         out2<<indent(s, tab);
         //counts if there is a open bracket
@@ -77,7 +77,7 @@ int main()
     }
     badCode.close();
     out2.close();
+    std::cout<<"HI";
 
     return 0;
 }
-
